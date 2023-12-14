@@ -11,6 +11,7 @@ systemctl start fail2ban
 
 ufw allow ssh
 ufw allow from 157.52.143.182;
+ufw allow from 45.131.44.48;
 ufw allow from 10.0.0.0/16;
 ufw enable
 
