@@ -1,9 +1,9 @@
-apt update && apt upgrade
+apt update && apt upgrade -y
 
 bash <(wget -qO- https://github.com/fackNode/requirements/raw/main/docker.sh)
 
 
-apt install fail2ban
+apt install fail2ban -y
 cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 systemctl enable fail2ban
 systemctl start fail2ban
