@@ -13,7 +13,7 @@ ufw allow ssh
 ufw enable
 
 
-echo '# This is the sshd server system-wide configuration file.  See
+echo "# This is the sshd server system-wide configuration file.  See
 # sshd_config(5) for more information.
 
 # This sshd was compiled with PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
@@ -92,7 +92,7 @@ KbdInteractiveAuthentication no
 # be allowed through the KbdInteractiveAuthentication and
 # PasswordAuthentication.  Depending on your PAM configuration,
 # PAM authentication via KbdInteractiveAuthentication may bypass
-# the setting of "PermitRootLogin without-password".
+# the setting of PermitRootLogin without-password.
 # If you just want the PAM account and session checks to run without
 # PAM authentication, then enable this but set PasswordAuthentication
 # and KbdInteractiveAuthentication to 'no'.
@@ -133,5 +133,5 @@ Subsystem	sftp	/usr/lib/openssh/sftp-server
 #	X11Forwarding no
 #	AllowTcpForwarding no
 #	PermitTTY no
-#	ForceCommand cvs server' > /etc/ssh/sshd_config
+#	ForceCommand cvs server" > /etc/ssh/sshd_config
 service ssh restart
